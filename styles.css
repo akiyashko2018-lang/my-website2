@@ -1,0 +1,47 @@
+/* 1. Стилі для BODY: Центрування контейнера по екрану */
+body {
+    /* Висота 100% від висоти вікна браузера */
+    height: 100vh;
+    /* Встановлюємо Flexbox */
+    display: flex;
+    /* Центрування по горизонталі */
+    justify-content: center;
+    /* Центрування по вертикалі */
+    align-items: center;
+    background-color: #e0f7fa;
+}
+
+/* 2. Стилі для .container: Центрування трьох блоків всередині */
+.container {
+    /* Розміри та фон */
+    width: 50%;
+    height: 30%;
+    background-color: lightblue;
+    
+    /* Встановлюємо Flexbox для цент-ння дочірніх .box */
+    display: flex; 
+    /* Центрування .box по горизонталі */
+    justify-content: center;
+    /* Центрування .box по вертикалі */
+    align-items: center; 
+}
+
+/* 3. Стилі для .box: Вигляд та цент-ння тексту */
+.box {
+    /* Розміри та фон */
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    
+    /* Зовнішні відступи */
+    margin: 10px;
+    
+    /* Стилі тексту */
+    color: white;
+    font-size: 28px;
+    
+    /* Центрування тексту всередині квадрата */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
